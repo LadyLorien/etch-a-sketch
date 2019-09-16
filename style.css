@@ -1,0 +1,75 @@
+:root {
+    --colNum: 16;
+    --hoverColor:	#808080;
+    --squareColor: #808080;
+}
+
+button {
+    display: inline-block;
+    margin: 1em 0 0.5em 0;
+    padding: 16px;
+    border: none;
+    background-color: #808080;
+    color: white;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #9FC3D0;
+}
+
+button:focus {
+    outline: none;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(var(--colNum), auto);
+    width: 600px;
+    height: 600px;
+        /* for reflowable container based on broswer size,
+            set width to 75% */
+    margin: 1em auto;
+    border: 0.25em solid grey;
+}
+
+.squares {
+    border: 1px solid var(--squareColor);
+}
+
+.hover {
+    background-color: var(--hoverColor);
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdownContent button {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    color: #808080;
+    text-decoration: none;
+}
+
+.dropdownContent button:hover {
+    background-color: #9FC3D0;
+}
+
+.show {display: block;}

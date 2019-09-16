@@ -1,0 +1,3 @@
+This project uses DOM manipulation methods to create a responsive webpage version of an etch-a-sketch toy. Features include the ability to change the grid size, invert the grid, clear the current grid, and select a drawing color.
+
+I learned about CSS variables from https://medium.com/@fionnachan/dynamic-number-of-rows-and-columns-with-css-grid-layout-and-css-variables-cb8e8381b6f2 and implemented them in the design. Becuase the color selection buttons use CSS variables, even the color of already-drawn squares changes to match the selection.
